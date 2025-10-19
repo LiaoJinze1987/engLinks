@@ -1,0 +1,75 @@
+/*全局样式*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    font-family: Arival, sans-serif;
+}
+
+/*题目容器*/
+.quiz-container {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 40px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/*选项样式*/
+.options {
+    margin-top: 20px;
+}
+
+.option {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: 3px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: lightgray;
+}
+
+.correct {
+    border-color: green !important;
+}
+
+.wrong {
+    border-color: red !important;
+}
+
+/*按钮样式*/
+.next-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+next-btn:hover {
+    background: #0056b3;
+}
+
+/* 统计结果 */
+.result-container {
+    text-align: center;
+}

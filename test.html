@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="icon" type="image/png" href="imgs/ic_launcher.png" />
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="question-type"></div>  <!-- 题目类型 -->
+        <div class="question-image"></div> <!-- 图片（可隐藏） -->
+        <p class="question-text"></p>      <!-- 题目内容 -->
+        <div class="options"></div>        <!-- 选项区 -->
+    </div>
+
+    <div class="result-container">
+        <h2>🎉 答题完成！</h2>
+        <p id="score"></p>
+        <p id="correct-count"></p>
+        <p id="wrong-count"></p>
+        <button class="complete-btn" onclick="returnToHome()">完成</button>
+    </div>
+
+    <script src="js/test.js"></script>
+
+</body>
+</html>

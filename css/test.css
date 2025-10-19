@@ -1,0 +1,132 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* 题目容器 */
+.quiz-container {
+    width: 500px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 题目类型 */
+.question-type {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 题目图片 */
+.question-image img {
+    max-width: 256px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+/* 题目文字 */
+.question-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* 选项区域 */
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+/* 选项按钮 */
+.option {
+    padding: 12px;
+    width: 90%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* 选中正确或错误的样式 */
+.correct {
+    border-color: green !important;
+    background: #d4f8d4 !important;
+}
+
+.wrong {
+    border-color: red !important;
+    background: #f8d4d4 !important;
+}
+
+/* 结果统计 */
+.result-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.result-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.result-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* 完成按钮 */
+.complete-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.complete-btn:hover {
+    background: #0056b3;
+}

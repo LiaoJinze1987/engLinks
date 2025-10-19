@@ -1,0 +1,73 @@
+/**首页样式*/
+
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 页面背景 */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../imgs/index_bg.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* 顶部导航栏 */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/**登录按钮*/
+.sign-in {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.sign-in:hover {
+    background: white;
+    color: black;
+}
+
+/* 文字部分 */
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Start 按钮 */
+.start-btn {
+    display: inline-block;
+    padding: 16px 72px;
+    border: 3px solid white;
+    border-radius: 12px;
+    color: white;
+    font-size: 20px;
+    background: transparent;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.start-btn:hover {
+    background: white;
+    color: black;
+}

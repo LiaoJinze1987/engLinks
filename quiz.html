@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="icon" type="image/png" href="imgs/ic_launcher.png" />
+        <link rel="stylesheet" href="css/quiz.css">
+    </head>
+    <body>
+
+        <div class="quiz-container">
+            <div class="question">
+                <div class="word-line"></div>
+                <p class="question-text"></p>
+                <div class="options"></div>
+            </div>
+            <button class="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    
+        <div class="result-container" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="score"></p>
+            <p id="correct-count"></p>
+            <p id="wrong-count"></p>
+            <button onclick="restartQuiz()">Restart</button>
+        </div>
+    
+        <script src="js/quiz.js"></script>
+    
+    </body>
+</html>
